@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" thread-count="5" name="Suite">
+<listeners>
+<listener class-name="com.andoorathodi.MavenAugust2023.TestComponents.Listeners"></listener>
+</listeners>
+  <test thread-count="5" name="Submit Order">
+    <classes>
+      <class name="com.andoorathodi.MavenAugust2023.tests.StandAloneTestPageObject"/>
+    </classes>
+  </test> <!-- Test -->
+    <test thread-count="5" name="Negative Scenarios">
+    <classes>
+      <class name="com.andoorathodi.MavenAugust2023.tests.NegeativeTEst"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+
+
